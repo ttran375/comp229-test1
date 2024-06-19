@@ -6,7 +6,13 @@ Select **Open in GitHub Codespaces** and then **Create codespace**. **GitHub** w
 
 ### Install Packages
 
-Install the necessary dependencies for both the server and client parts of the application.
+Navigate to API
+
+```sh
+cd API
+```
+
+Install the necessary dependencies.
 
 ```sh
 yarn

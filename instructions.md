@@ -1,5 +1,7 @@
 # Instruction
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ttran375/comp229-test1)
+
 Select **Open in GitHub Codespaces** and then **Create codespace**. **GitHub** will prepare the development environment.
 
 ### Install Packages

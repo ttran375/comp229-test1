@@ -16,8 +16,21 @@ app.get("/", (req, res) => {
 });
 
 // Get all movies - You can sort this array if needed
+// Filter movies by title
 app.get("/api/items", (req, res) => {
-  res.json(movies);
+  const titleQuery = req.query.title; // Get the title from query parameters
+  if (titleQuery) {
+    // Remove brackets and retrieve the content inside them
+    const title = titleQuery.match(/\[(.*)\]/)?.[1];
+    if (title) {
+      const filteredMovies = movies.filter((movie) => movie.startsWith(title));
+      res.json(filteredMovies);
+    } else {
+      res.status(400).send("Invalid title format. Use title=[YourTitleHere].");
+    }
+  } else {
+    res.json(movies); // Return all movies if no title query parameter is provided
+  }
 });
 
 // Get one movie by ID

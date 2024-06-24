@@ -1,5 +1,7 @@
 # MIDTERM TEST
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ttran375/comp229-test1)
+
 Using the given datafile provided carefully review the code notice the
 strings of Array
 
